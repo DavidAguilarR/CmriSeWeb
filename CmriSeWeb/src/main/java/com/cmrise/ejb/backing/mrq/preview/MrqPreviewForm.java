@@ -44,6 +44,7 @@ public class MrqPreviewForm {
 	private String tituloPregunta; 
 	private String textoPregunta; 
 	private String textoSugerencias; 
+	private String textoSugerenciasDesc; 
 	private String respuestaPreguntaCandidato;
 	private String respuestaPreguntaSistema; 
 	private String textoExplicacion;
@@ -361,6 +362,13 @@ public class MrqPreviewForm {
 
 	public void setTextoSugerencias(String textoSugerencias) {
 		this.textoSugerencias = textoSugerencias;
+	}
+	public String getTextoSugerenciasDesc() {
+		return textoSugerenciasDesc;
+	}
+
+	public void setTextoSugerenciasDesc(String textoSugerenciasDesc) {
+		this.textoSugerenciasDesc = textoSugerenciasDesc;
 	}
 
 	public GuestPreferences getGuestPreferences() {

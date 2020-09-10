@@ -120,10 +120,13 @@ public class CoreCasePreviewForm {
 																	             
 		 System.out.println("ccPreguntasHdrV1.getTipoPregunta():"+ccPreguntasHdrV1.getTipoPregunta());
 		 System.out.println("ccPreguntasFtaV1.isSingleAnswerMode():"+ccPreguntasFtaV1.isSingleAnswerMode());
-		 
+	
 		 if(Utilitarios.LIMIT_RESP_TEXTO_LIBRE.equals(ccPreguntasHdrV1.getTipoPregunta())){
 			 this.setLimitedFreeTextAnswer(true);
 			 this.setRespuestaPreguntaSistema(ccPreguntasFtaV1.getRespuestaCorrecta());
+			this.setRespuestaPreguntaCandidato(ccPreguntasFtaV1.getRespuestaCorrecta());
+
+		
 		 }else if(Utilitarios.OPCION_MULTIPLE.equals(ccPreguntasHdrV1.getTipoPregunta())) {
 			 this.setMultipleChoice(true);
 			 this.setSingleAnswerMode(ccPreguntasFtaV1.isSingleAnswerMode());

@@ -26,6 +26,7 @@ public class MrqsPreguntasFtaDaoImpl implements MrqsPreguntasFtaDao {
 		BigInteger lNumeroS = (BigInteger)q.getSingleResult();
 		pMrqsPreguntasFtaDto.setRutaImagen(pMrqsPreguntasFtaDto.getRutaImagen()+"\\"+lNumeroS);
 		pMrqsPreguntasFtaDto.setNumero(lNumeroS.longValue());
+		
 		em.persist(pMrqsPreguntasFtaDto);
 		return lNumeroS.longValue();
 	}

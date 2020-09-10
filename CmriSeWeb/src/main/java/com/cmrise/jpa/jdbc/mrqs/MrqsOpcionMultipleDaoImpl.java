@@ -48,6 +48,8 @@ public class MrqsOpcionMultipleDaoImpl implements MrqsOpcionMultipleDao {
 		mrqsOpcionMultipleDto.setTextoExplicacion(pMrqsOpcionMultipleDto.getTextoExplicacion());
 		mrqsOpcionMultipleDto.setTextoRespuesta(pMrqsOpcionMultipleDto.getTextoRespuesta());
 		mrqsOpcionMultipleDto.setNumeroLinea(pMrqsOpcionMultipleDto.getNumeroLinea());
+		
+	
 	}
 
 	@Override
